@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="wrap">
+
+</div>
+
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/Input.js"></script>
+<script type="text/javascript" src="js/Text.js"></script>
+<script type="text/javascript" src="js/Btn.js"></script>
+<script type="text/javascript" src="js/App.js"></script>
+<script>
+    $(function () {
+        App.input = new Input();
+        App.text = new Text();
+        App.btn = new Btn();
+        App.btn.click = function(){
+            App.text.setName(App.input.getValue());
+        }
+    })
+</script>
+</body>
+</html>
